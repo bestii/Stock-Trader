@@ -1,4 +1,6 @@
 <div class="container-fluid">
     <Header></Header>
-    
+    <div class="row mt-3">
+        <Stock v-for="stock in stocks" :key="stock.id" :stock="stock"></Stock>
+    </div>
 </div>

@@ -10,11 +10,11 @@ export default {
         buyStock() {
             const order = {
                 stockId: this.stock.id,
-                stockProce: this.stock.price,
+                stockPrice: this.stock.price,
                 quantity: this.quantity
             }
             console.log(order);
-            this.$store.dispatch('buyStocks', order);
+            this.$store.dispatch('buyStock', order);
             this.quantity = 0;
         }
     }

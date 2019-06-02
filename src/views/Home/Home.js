@@ -4,5 +4,10 @@ export default {
     name: "home",
     components: {
         Header
+    }, computed: {
+        funds(){
+            return this.$store.getters.funds;
+        }
     }
+
 };
