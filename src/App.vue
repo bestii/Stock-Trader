@@ -5,5 +5,12 @@
 </template>
 
 <style lang="less">
-
 </style>
+
+<script>
+export default {
+  created() {
+    this.$store.dispatch('initStocks');
+  }
+};
+</script>
